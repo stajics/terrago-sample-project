@@ -10,14 +10,14 @@ import InputWithLabel from './components/InputWithLabel';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { height: '4000', numberOfColumns: 4, themeColor: 'green' };
+    this.state = { height: '400', numberOfColumns: 4, themeColor: 'green' };
   }
 
   render() {
     const { height, numberOfColumns, themeColor } = this.state;
     return (
       <div className="App">
-        <AppBar theme={themeColor} />
+        <AppBar theme={themeColor} onChangeTheme={(theme) => { this.setState({ themeColor: theme }); }} />
         <div className="main container-fluid hfill">
           <div className="row hfill">
             <div className="col-3 no-padding">

@@ -1,0 +1,18 @@
+@import '../assets/css/variables.scss';
+
+:local(.themeSwitcher){
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  width: 400px;
+  border: 2px solid green;
+  height: 35px;
+  option{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    cursor: pointer;
+  }
+}

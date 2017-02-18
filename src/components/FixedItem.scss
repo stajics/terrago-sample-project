@@ -1,0 +1,18 @@
+@import '../assets/css/variables.scss';
+
+:local(.fixedItem){
+  display: flex;
+  align-items: center;
+  color: white;
+  position: fixed;
+  z-index: 100;
+  bottom: 0px;
+  left: 70px;
+
+  p.text {
+    font-size: 20px;
+    margin: 0;
+    border-bottom: 3px solid white;
+    padding: 0 5px;
+  }
+}

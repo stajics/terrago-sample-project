@@ -4,6 +4,7 @@ import './App.css';
 
 import AppBar from './components/AppBar';
 import SideBar from './components/SideBar';
+import FixedItem from './components/FixedItem';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <FixedItem />
       </div>
     );
   }

@@ -1,0 +1,15 @@
+@import '../assets/css/variables.scss';
+
+:local(.inputWithLabel){
+  display: flex;
+  align-items: center;
+  input{
+    border: none;
+    width: 3em;
+    border-bottom: 1px solid gray;
+    text-align: center;
+  }
+  span{
+    border-bottom: 1px solid gray;
+  }
+}

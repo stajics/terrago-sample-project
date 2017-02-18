@@ -5,6 +5,7 @@ import css from './AppBar.css';
 // assets
 import myAppGreen from '../assets/images/my_app_green.png';
 import myAppRed from '../assets/images/my_app_red.png';
+
 import face from '../assets/images/face.jpg';
 
 const propTypes = {
@@ -21,7 +22,7 @@ class AppBar extends Component {
     const { theme } = this.props;
     return (
       <div className={css.appBar}>
-        <img src={myAppGreen} alt="My app" height="32" width="120" />
+        <img src={theme === 'green' ? myAppGreen : myAppRed} alt="My app" height="32" width="120" />
         <div className="avatar-wrapper">
           <div className="avatar" style={{ backgroundImage: `url(${face})` }} />
         </div>

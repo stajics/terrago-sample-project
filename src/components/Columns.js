@@ -6,14 +6,14 @@ import css from './Columns.css';
 
 const propTypes = {
   height: PropTypes.string.isRequired,
-  numberOfRows: PropTypes.number.isRequired,
-  backgroundColor: PropTypes.string.isRequired,
+  numberOfColumns: PropTypes.number.isRequired,
+  theme: PropTypes.string.isRequired,
 };
 
-const Columns = ({ height, numberOfRows, backgroundColor }) => {
+const Columns = ({ height, numberOfColumns, theme }) => {
   const columns = [];
-  for (let i = 0; i < numberOfRows; i += 1) {
-    columns.push(<div key={i} className="column" style={{ height, backgroundColor }} />);
+  for (let i = 0; i < numberOfColumns; i += 1) {
+    columns.push(<div key={i} className="column" style={{ height, backgroundColor: theme }} />);
   }
   return (
     <div className={css.columns}>

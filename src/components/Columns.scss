@@ -12,7 +12,7 @@
     margin-left: 1em;
     display: flex;
     flex: 1;
-    background-color: red;
+    transition: height 1s ease;
     &:nth-child(1){
       margin-left: 0;
     }

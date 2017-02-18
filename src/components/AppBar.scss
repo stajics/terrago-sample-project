@@ -1,0 +1,29 @@
+@import '../assets/css/variables.scss';
+
+:local(.appBar){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $light_gray;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,.20);
+  padding: 0 2em;
+  height: 60px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+  div.avatar-wrapper{
+    display: flex;
+    align-items: center;
+    div.avatar{
+      display: inline-block;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      min-width: 50px;
+      min-height: 50px;
+    }
+  }
+}

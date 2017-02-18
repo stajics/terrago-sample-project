@@ -1,0 +1,8 @@
+@import '../assets/css/variables.scss';
+
+:local(.sideBar){
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: $dark_gray;
+}

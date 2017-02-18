@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
     "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.1",
     "react-scripts": "0.9.0"
@@ -10,6 +15,34 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "linebreak-style": "off",
+      "new-cap": "off",
+      "import/no-named-as-default": "off",
+      "jsx-a11y/href-no-hash": "off"
+    },
+    "globals": {
+      "fetch": true,
+      "it": true,
+      "expect": true,
+      "jest": true,
+      "alert": true,
+      "document": true,
+      "localStorage": true,
+      "confirm": true
+    }
   },
   "scripts": {
     "build-css": "node-sass src/ -o src/",

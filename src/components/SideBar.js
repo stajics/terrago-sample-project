@@ -19,8 +19,8 @@ class AppBar extends Component {
     const { theme } = this.props;
     return (
       <div className={css.sideBar}>
-        <LineItem title="Line item title" subtitle="Subheader here" theme={theme} />
-        <LineItem title="Line item title" subtitle="Subheader here" theme={theme} />
+        <LineItem title="long title Line item title" subtitle="Subheader here" theme={theme} />
+        <LineItem title="Line item title" subtitle="Long Subheader Subheader here" theme={theme} />
         <LineItem title="Line item title" subtitle="Subheader here" theme={theme} />
       </div>
     );

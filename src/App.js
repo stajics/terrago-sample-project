@@ -17,13 +17,16 @@ class App extends Component {
     const { height, numberOfColumns, themeColor } = this.state;
     return (
       <div className="App">
-        <AppBar theme={themeColor} onChangeTheme={(theme) => { this.setState({ themeColor: theme }); }} />
+        <AppBar
+          theme={themeColor}
+          onChangeTheme={(theme) => { this.setState({ themeColor: theme }); }}
+        />
         <div className="main container-fluid hfill">
-          <div className="row hfill">
-            <div className="col-3 no-padding">
+          <div className="row .no-gutters hafill">
+            <div className="col-12 col-sm-6 col-md-5 col-lg-4 no-padding sidebar">
               <SideBar theme={themeColor} />
             </div>
-            <div className="col-9 no-padding">
+            <div className="col-12 col-sm-6 col-md-7 col-lg-8 no-padding">
               <div className="container">
                 <div className="inputs">
                   <InputWithLabel

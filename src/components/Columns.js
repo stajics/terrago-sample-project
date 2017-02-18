@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // components
 // styles
 import css from './Columns.css';
@@ -17,7 +18,15 @@ const Columns = ({ height, numberOfColumns, theme }) => {
   }
   return (
     <div className={css.columns}>
-      {columns}
+      <ReactCSSTransitionGroup
+        transitionName="example"
+        transitionAppear={true}
+        transitionAppearTimeout={500}
+        transitionEnterTimeout={500}
+        transitionLeaveTimeout={300}
+        >
+        {columns}
+      </ReactCSSTransitionGroup>
     </div>
   );
 };

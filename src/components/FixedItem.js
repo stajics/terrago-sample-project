@@ -1,14 +1,9 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 // components
 // styles
 import css from './FixedItem.css';
 // assets
 import screw from '../assets/icons/screw.svg';
-
-const propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-};
 
 const LineItem = () => (
   <div className={css.fixedItem}>
@@ -19,7 +14,5 @@ const LineItem = () => (
     <img src={screw} alt="icon" />
   </div>
 );
-
-LineItem.propTypes = propTypes;
 
 export default LineItem;

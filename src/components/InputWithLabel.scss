@@ -3,13 +3,20 @@
 :local(.inputWithLabel){
   display: flex;
   align-items: center;
+  margin-top: 1em;
+
   input{
     border: none;
     width: 3em;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
     text-align: center;
+    &:focus{
+      outline: none;
+    }
   }
   span{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
+    margin-top: 2px;
+    color: gray;
   }
 }

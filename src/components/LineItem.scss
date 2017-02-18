@@ -11,6 +11,7 @@
 
   .left-items {
     display: flex;
+    flex-shrink: 1;
   }
   .title-subtitle {
     margin-left: 1em;
@@ -20,11 +21,21 @@
     p.title {
       font-size: 25px;
       margin: 0;
+      max-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
     }
     p.subtitle {
       margin: 0;
       font-size: 17px;
       font-weight: bold;
+      max-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
     }
   }
 }

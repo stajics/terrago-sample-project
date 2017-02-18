@@ -7,8 +7,11 @@ import css from './InputWithLabel.css';
 const propTypes = {
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  value: PropTypes.number.isRequired,
-  sufix: PropTypes.number,
+  value: React.PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
+  sufix: PropTypes.string,
 };
 
 const defaultProps = {

@@ -5,6 +5,7 @@ import './App.css';
 import AppBar from './components/AppBar';
 import SideBar from './components/SideBar';
 import FixedItem from './components/FixedItem';
+import Columns from './components/Columns';
 
 class App extends Component {
   render() {
@@ -17,7 +18,9 @@ class App extends Component {
               <SideBar />
             </div>
             <div className="col-9 no-padding">
-              BBB
+              <div className="container">
+                <Columns height="300px" numberOfRows={4} backgroundColor="green" />
+              </div>
             </div>
           </div>
         </div>

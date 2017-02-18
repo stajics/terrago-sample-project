@@ -1,0 +1,27 @@
+@import '../assets/css/variables.scss';
+
+:local(.columns){
+  display: flex;
+  height: 60%;
+  margin-top: 2em;
+  padding: 2em;
+  background-color: $light_gray;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,.20);
+
+  .column {
+    margin-left: 1em;
+    display: flex;
+    flex: 1;
+    background-color: red;
+    &:nth-child(1){
+      margin-left: 0;
+    }
+  }
+
+  p.text {
+    font-size: 20px;
+    margin: 0;
+    border-bottom: 3px solid white;
+    padding: 0 5px;
+  }
+}

@@ -1,0 +1,29 @@
+@import '../assets/css/variables.scss';
+
+:local(.lineItem){
+  display: flex;
+  height: 90px;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  padding: 0 1em;
+
+  .left-items {
+    display: flex;
+  }
+  .title-subtitle {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p.title {
+      font-size: 25px;
+      margin: 0;
+    }
+    p.subtitle {
+      margin: 0;
+      font-size: 17px;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 // components
+import LineItem from './LineItem';
 // styles
 import css from './SideBar.css';
 // assets
@@ -18,7 +19,9 @@ class AppBar extends Component {
     const { theme } = this.props;
     return (
       <div className={css.sideBar}>
-        AAA
+        <LineItem title="Line item title" subtitle="Subheader here" />
+        <LineItem title="Line item title" subtitle="Subheader here" />
+        <LineItem title="Line item title" subtitle="Subheader here" />
       </div>
     );
   }
